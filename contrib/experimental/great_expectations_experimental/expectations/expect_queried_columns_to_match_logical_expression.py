@@ -35,7 +35,7 @@ class ExpectQueriedColumnsToMatchLogicalExpression(QueryExpectation):
     query = """ SELECT COUNT(*)
                     FROM (SELECT {column_list}
                     FROM {active_batch} a
-                    WHERE not ({expression})) b
+                    WHERE not ({expression})) c
                 """
 
     # This is a list of parameter names that can affect whether the Expectation evaluates to True or False
